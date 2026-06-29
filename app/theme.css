@@ -1,0 +1,18 @@
+:root {
+  --bg: #F8F6F1;
+  --surface: #FFFFFF;
+  --sidebar: #0B1F3A;
+  --accent: #C89B3C;
+  --text: #1F2933;
+  --muted: #6B7280;
+  --border: #E6DFD2;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+::selection {
+  background: rgba(200, 155, 60, 0.18);
+}
