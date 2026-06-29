@@ -87,7 +87,7 @@ export default function HomePage() {
 
             <div className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
               {metrics.map((item) => (
-                <div key={item.label} className="rounded-3xl border border-white/10 bg-white/8 p-4">
+                <div key={item.label} className="rounded-3xl border border-white/10 bg-white/[0.08] p-4">
                   <div className="flex items-center justify-between">
                     <item.icon size={20} className="text-[#F5D891]" />
                     <TrendingUp size={16} className="text-[#9DB2D3]" />
