@@ -1,12 +1,15 @@
 import './globals.css';
 import './theme.css';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import PwaManager from '@/components/PwaManager';
 
 export const metadata: Metadata = {
   title: 'Realty Assistant',
   description: 'Premium CRM and business management platform for real estate brokers.',
-  metadataBase: new URL('https://example.com'),
+  metadataBase: new URL('https://realtyassistant.owsdigital.in')
+};
+
+export const viewport: Viewport = {
   themeColor: '#0B1F3A'
 };
 
