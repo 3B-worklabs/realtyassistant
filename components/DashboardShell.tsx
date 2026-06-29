@@ -151,9 +151,7 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
                             />
                           ) : null}
                           <item.icon size={18} className={cn('relative z-10 shrink-0', active ? 'text-[#C89B3C]' : 'text-[#9DB2D3] group-hover:text-[#F5D891]')} />
-                          <span className="relative z-10 min-w-0">
-                            <SidebarLabel collapsed={collapsed}>{item.label}</SidebarLabel>
-                          </span>
+                          {!collapsed ? <span className="relative z-10 min-w-0 truncate">{item.label}</span> : null}
                         </Link>
                       );
                     })}
