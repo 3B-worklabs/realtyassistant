@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Download, WifiOff } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 type BeforeInstallPromptEvent = Event & {
@@ -61,8 +60,8 @@ export default function PwaManager() {
     <div className="fixed inset-x-4 bottom-4 z-50 rounded-3xl border border-border bg-white/95 p-4 shadow-card backdrop-blur-sm sm:inset-x-6">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-3xl bg-accent/10 text-accent">
-            <Download size={20} />
+          <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl bg-accent/10">
+            <img src="/icons/master-logo.png" alt="Realty Assistant" className="h-full w-full object-cover" />
           </div>
           <div>
             <p className="text-sm font-semibold text-text">Install Realty Assistant</p>

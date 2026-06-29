@@ -6,3 +6,8 @@ npm-debug.log
 .env*
 coverage/
 public/icons/*.png
+!public/icons/master-logo.png
+!public/icons/icon-192.png
+!public/icons/icon-512.png
+!public/icons/maskable-192.png
+!public/icons/maskable-512.png

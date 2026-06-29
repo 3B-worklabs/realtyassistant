@@ -20,7 +20,6 @@ import {
   Plus,
   Search,
   Settings,
-  Sparkles,
   Users,
   X
 } from 'lucide-react';
@@ -139,8 +138,8 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
           <div className={cn('flex h-full flex-col overflow-hidden rounded-[32px] border border-white/15 bg-[#071B35]/90 text-white shadow-[0_28px_100px_rgba(7,27,53,0.28)] backdrop-blur-2xl', collapsed ? 'p-3' : 'p-4')}>
             <div className={cn('flex items-center gap-3', collapsed ? 'justify-center' : 'justify-between')}>
               <div className="flex min-w-0 items-center gap-3">
-                <div className={cn('grid shrink-0 place-items-center rounded-2xl border border-white/10 bg-white/10 text-[#E9C46A] shadow-inner', collapsed ? 'h-10 w-10' : 'h-12 w-12')}>
-                  <Sparkles size={20} />
+                <div className={cn('grid shrink-0 place-items-center overflow-hidden rounded-2xl border border-white/10 bg-white shadow-inner', collapsed ? 'h-10 w-10' : 'h-12 w-12')}>
+                  <img src="/icons/master-logo.png" alt="Realty Assistant" className="h-full w-full object-cover" />
                 </div>
                 <SidebarLabel collapsed={collapsed}>
                   <div>
@@ -247,8 +246,8 @@ export function DashboardShell({ children }: { children: React.ReactNode }) {
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="grid h-11 w-11 place-items-center rounded-2xl border border-white/10 bg-white/10 text-[#E9C46A]">
-                    <Sparkles size={20} />
+                  <div className="grid h-11 w-11 place-items-center overflow-hidden rounded-2xl border border-white/10 bg-white">
+                    <img src="/icons/master-logo.png" alt="Realty Assistant" className="h-full w-full object-cover" />
                   </div>
                   <div>
                     <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#9DB2D3]">Realty</p>

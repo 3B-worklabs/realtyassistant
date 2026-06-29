@@ -1,6 +1,17 @@
-const CACHE_NAME = 'realty-assistant-v1';
+const CACHE_NAME = 'realty-assistant-v2';
 const OFFLINE_URL = '/offline.html';
-const ASSETS = ['/', '/manifest.json', '/offline.html', '/icons/icon.svg'];
+const ASSETS = [
+  '/',
+  '/manifest.json',
+  '/offline.html',
+  '/favicon.png',
+  '/apple-touch-icon.png',
+  '/icons/master-logo.png',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
+  '/icons/maskable-192.png',
+  '/icons/maskable-512.png'
+];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
