@@ -17,6 +17,7 @@ import {
   FileText,
   Home,
   Menu,
+  MessageCircle,
   Plus,
   Search,
   Settings,
@@ -38,6 +39,7 @@ const navItems = [
   { label: 'MOU Generator', href: '/documents/mou-generator', icon: FileText, group: 'Documents' },
   { label: 'Banking', href: '/accounts/banking', icon: Banknote, group: 'Finance' },
   { label: 'Marketing', href: '/marketing', icon: CreditCard, group: 'Growth' },
+  { label: 'Messages', href: '/marketing/messages', icon: MessageCircle, group: 'Growth' },
   { label: 'Reports', href: '/reports', icon: BarChart3, group: 'Growth' },
   { label: 'Users', href: '/administration/users', icon: Users, group: 'Admin' },
   { label: 'Settings', href: '/administration/settings', icon: Settings, group: 'Admin' }
