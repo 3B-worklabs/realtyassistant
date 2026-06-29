@@ -98,22 +98,18 @@ cd realtyassistant
 HOST_PORT=3010 docker compose up --build -d
 ```
 
+Or use the included VPS deployment script:
+
+```bash
+cd /var/www/realtyassistant
+chmod +x deploy/vps-deploy.sh
+./deploy/vps-deploy.sh
+```
+
 Example nginx site:
 
 ```nginx
-server {
-    listen 80;
-    server_name realtyassistant.owsdigital.in;
-
-    location / {
-        proxy_pass http://127.0.0.1:3010;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-}
+deploy/nginx/realtyassistant.conf
 ```
 
 Enable SSL after nginx serves the correct app:
