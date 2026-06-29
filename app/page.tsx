@@ -17,6 +17,7 @@ import {
 import { DashboardShell } from '@/components/DashboardShell';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
+import { DemoActionButton } from '@/components/DemoActionButton';
 
 const metrics = [
   { label: 'Active clients', value: '248', delta: '+18 this week', icon: Users },
@@ -74,14 +75,17 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-3 sm:min-w-[320px]">
-                <button className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-accent px-4 text-sm font-semibold text-white">
-                  <Plus size={17} />
-                  Add lead
-                </button>
-                <button className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-white/10 px-4 text-sm font-semibold text-white">
-                  <FileSignature size={17} />
-                  MOU
-                </button>
+                <DemoActionButton
+                  label="Add lead"
+                  icon={<Plus size={17} />}
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-accent px-4 text-sm font-semibold text-white"
+                />
+                <DemoActionButton
+                  label="MOU"
+                  title="Create MOU"
+                  icon={<FileSignature size={17} />}
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl bg-white/10 px-4 text-sm font-semibold text-white"
+                />
               </div>
             </div>
 
@@ -126,10 +130,11 @@ export default function HomePage() {
                 <Badge>CRM pipeline</Badge>
                 <h3 className="mt-3 text-xl font-semibold">High intent opportunities</h3>
               </div>
-              <button className="inline-flex h-11 items-center justify-center gap-2 rounded-2xl border border-border px-4 text-sm font-semibold">
-                <PhoneCall size={17} />
-                Call queue
-              </button>
+              <DemoActionButton
+                label="Call queue"
+                icon={<PhoneCall size={17} />}
+                className="inline-flex h-11 items-center justify-center gap-2 rounded-2xl border border-border px-4 text-sm font-semibold"
+              />
             </div>
             <div className="mt-6 overflow-hidden rounded-2xl border border-border">
               <div className="grid grid-cols-[1.1fr_1.3fr_0.7fr_0.7fr] bg-background px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-muted">
@@ -232,10 +237,11 @@ export default function HomePage() {
                 <div className="h-full w-[72%] rounded-full bg-accent" />
               </div>
             </div>
-            <button className="mt-5 inline-flex h-11 w-full items-center justify-center gap-2 rounded-2xl bg-sidebar px-4 text-sm font-semibold text-white">
-              <Banknote size={17} />
-              View ROI report
-            </button>
+            <DemoActionButton
+              label="View ROI report"
+              icon={<Banknote size={17} />}
+              className="mt-5 inline-flex h-11 w-full items-center justify-center gap-2 rounded-2xl bg-sidebar px-4 text-sm font-semibold text-white"
+            />
           </Card>
         </section>
       </div>
